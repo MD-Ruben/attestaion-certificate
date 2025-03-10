@@ -1,0 +1,140 @@
+@media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .container {
+      box-shadow: none !important;
+      max-width: 100% !important;
+    }
+  }
+
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f8f9fa;
+  }
+  .container {
+    max-width: 800px;
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .logo {
+    height: 80px;
+    margin-top: -10px;
+  }
+  .school-name {
+    color: #008000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    /* margin-bottom: 5px; */
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .contact-info {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .attestation-title-container {
+    position: relative;
+    margin: 40px 0;
+  }
+  .attestation-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    box-shadow: -8px -8px 12px rgba(0, 0, 0, 0.3);
+  }
+  .title-shadow {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    z-index: 1;
+    display: none; /* Masquer l'ancienne ombre car nous utilisons maintenant box-shadow */
+  }
+  .attestation-content {
+    padding: 20px;
+    line-height: 2;
+    font-size: 1.1rem;
+  }
+  .student-info {
+    margin: 30px 0;
+  }
+  .signature {
+    text-align: right;
+    margin-top: 80px;
+    padding-right: 50px;
+  }
+  .footer-note {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .striped-border {
+    height: 3px;
+    background: repeating-linear-gradient(
+      45deg,
+      #aaa,
+      #aaa 10px,
+      #fff 10px,
+      #fff 20px
+    );
+    margin: 15px 0;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .horizontal-line {
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+    display: inline-block;
+    width: 150px;
+  }
+  .student-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .status-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .stamp-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+  }
+  .stamp {
+    width: 350px;
+    height: auto;
+    margin-right: -60px;
+    transform: rotate(-5deg);
+    opacity: 0.9;
+  }
